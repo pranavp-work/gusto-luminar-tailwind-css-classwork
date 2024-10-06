@@ -13,6 +13,9 @@
             <!-- tailwind css -->
             <script src="https://cdn.tailwindcss.com"></script>
 
+            <!-- font-awesome cdn -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
             <!-- regular css properties -->
             <style>
                 * {
@@ -26,7 +29,8 @@
                 <div class="w-full h-screen bg-zinc-800 bg-opacity-50">
 
                     <!-- navbar starts -->
-                    <nav class="w-full p-4 bg-red-950 flex justify-center items-center text-yellow-300">
+
+                    <!-- <nav class="w-full p-4 bg-red-950 flex justify-center items-center text-yellow-300">
                         <ul class="flex flex-wrap justify-evenly w-full">
                             <li class="px-4 py-2 hover:text-red-300 hover:cursor-pointer md:text-4xl text-xl">Specials</li>
                             <li class="px-4 py-2 hover:text-blue-300 hover:cursor-pointer md:text-4xl text-xl">About</li>
@@ -34,7 +38,20 @@
                             <li class="px-4 py-2 hover:text-gray-300 hover:cursor-pointer md:text-4xl text-xl">Chef</li>
                             <li class="px-4 py-2 hover:text-orange-300 hover:cursor-pointer md:text-4xl text-xl">Contact</li>
                         </ul>
-                    </nav>
+                    </nav> -->
+
+                    <nav class="bg-red-900 text-white py-4 px-10">
+                        <div class="container mx-auto flex justify-between items-center">
+                          <div class="text-xl font-bold">Gusto</div>
+                          <ul class="flex space-x-6">
+                            <li><a href="#specials" class="hover:text-gray-300 md:text-4xl text-xl hover:cursor-pointer px-4 py-2">Specials</a></li>
+                            <li><a href="#about" class="hover:text-gray-300 md:text-4xl text-xl hover:cursor-pointer px-4 py-2">About</a></li>
+                            <li><a href="#menu" class="hover:text-gray-300 md:text-4xl text-xl hover:cursor-pointer px-4 py-2">Menu</a></li>
+                            <li><a href="#chef" class="hover:text-gray-300 md:text-4xl text-xl hover:cursor-pointer px-4 py-2">Chef</a></li>
+                            <li><a href="#contact" class="hover:text-gray-300 md:text-4xl text-xl hover:cursor-pointer px-4 py-2">Contact</a></li>
+                          </ul>
+                        </div>
+                      </nav>
                     <!-- navbar ends -->
 
                     <div class="flex justify-center items-center w-full flex-col md:pt-64 pt-24 px-4 text-center">
@@ -45,7 +62,7 @@
             </div>
 
             <!-- specials -->
-            <div class="w-full flex justify-center items-center flex-col">
+            <div class="w-full flex justify-center items-center flex-col" id="specials">
                 <h1 class="md:text-4xl text-2xl mt-20 text-center">OUR SPECIALS</h1>
                 <div class="w-40 h-1 bg-red-950 mb-4"></div>
             
@@ -70,7 +87,7 @@
             </div>
 
             <!-- about -->
-            <div class="w-full grid md:grid-cols-2 grid-cols-1 my-20 bg-slate-100">
+            <div class="w-full grid md:grid-cols-2 grid-cols-1 my-20 bg-slate-100" id="about">
                 <div>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE4WO73yLNJ1jfIkythGWnToEwdBH6wtRwvQ&s" width="100%" height="100%" alt="">
                 </div>
@@ -85,7 +102,7 @@
             </div>
 
             <!-- menu -->
-            <div class="w-full">
+            <div class="w-full px-10" id="menu">
                 <div class="w-full flex justify-center items-center flex-col">
                     <h1 class="md:text-4xl text-2xl mt-20 text-center">MENU</h1>
                     <div class="w-40 h-1 bg-red-950 mb-4"></div>
@@ -127,7 +144,7 @@
                                 </div>
                         </div>
 
-                        <div class="flex justify-center items-center flex-col my-10 mx-10">
+                        <div class="flex justify-center items-center flex-col my-10 mx-10 px-10">
                             <h1 class="text-4xl">BREAKFAST & STARTERS</h1>
                             <div class="w-56 h-1 bg-red-500"></div>
                                 <div class="mt-5">
@@ -163,5 +180,103 @@
 
                 </div>
             </div>
+
+
+        <!-- chef Section -->
+        <section id="chef" class="container mx-auto py-12 px-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Pancakes -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://media.istockphoto.com/id/1201479537/video/maple-syrup-being-poured-on-stack-of-freshly-made-pancakes-or-crepes-on-table-for-pancake-day.jpg?s=640x640&k=20&c=QOa9A7b7ejOW464vvGlrjwWz9xFZUPQzuImHTorEn4Y=" alt="Pancakes" class="w-full h-48 object-cover">
+            </div>
+            <!-- Pasta -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://images6.alphacoders.com/105/1052976.jpg" alt="Pasta" class="w-full h-48 object-cover">
+            </div>
+            <!-- Stir-fry -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://www.shutterstock.com/image-photo/asian-cuisine-stir-fried-chicken-600nw-2330854893.jpg" alt="Stir Fry" class="w-full h-48 object-cover">
+            </div>
+            <!-- Salad -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*Ph06UnHTeqT3oFEvzGkHqQ.jpeg" alt="Salad" class="w-full h-48 object-cover">
+            </div>
+            </div>
+        </section>
+
+        <!-- Contact Details -->
+        <section id="contact" class="bg-gray-800 text-white py-12 px-10">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- Reservations -->
+                <div>
+                    <h3 class="text-lg font-bold mb-2">RESERVATIONS</h3>
+                    <div class="flex justify-center mb-2">
+                        <div class="w-20 h-1 bg-red-500"></div> <!-- Adjusted the width for a better look -->
+                    </div>
+                    <p>Please call</p>
+                    <p class="text-red-400">(887) 654-3210</p>
+                </div>
+                <!-- Address -->
+                <div>
+                    <h3 class="text-lg font-bold mb-2">ADDRESS</h3>
+                    <div class="flex justify-center mb-2">
+                        <div class="w-20 h-1 bg-red-500"></div> <!-- Adjusted the width for a better look -->
+                    </div>
+                    <p>4321 California St,</p>
+                    <p>San Francisco, CA 12345</p>
+                </div>
+                <!-- Opening Hours -->
+                <div>
+                    <h3 class="text-lg font-bold mb-2">OPENING HOURS</h3>
+                    <div class="flex justify-center mb-2">
+                        <div class="w-20 h-1 bg-red-500"></div> <!-- Adjusted the width for a better look -->
+                    </div>
+                    <p>Mon-Thurs: 10:00 AM - 11:00 PM</p>
+                    <p>Fri-Sun: 11:00 AM - 02:00 AM</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="message" class="bg-gray-800 text-white py-12 px-10">
+            <div class="container mx-auto text-center">
+            <h3 class="text-xl font-bold mb-6">SEND US A MESSAGE</h3>
+            <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+            
+            <!-- Form -->
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" placeholder="Name" class="bg-gray-700 p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                <input type="email" placeholder="Email" class="bg-gray-700 p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                </div>
+                <textarea placeholder="Message" rows="5" class="w-full bg-gray-700 p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"></textarea>
+                <button class="bg-gray-700 py-2 px-6 rounded-md border-2 border-gray-500 hover:bg-gray-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-red-600">SEND MESSAGE</button>
+            </form>
+            </div>
+        </section>
+
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-900 text-gray-300 py-6 px-10">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <!-- Footer Text -->
+                <p class="text-center md:text-left mb-4 md:mb-0">© Copyright. All rights reserved | Designed by Pranav P while in Luminar Technolab</p>
+            
+                <!-- Social Icons -->
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white">
+                        <i class="fab fa-facebook-f"></i> <!-- Facebook Icon -->
+                    </a>
+                    <a href="#" class="hover:text-white">
+                        <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
+                    </a>
+                    <a href="#" class="hover:text-white">
+                        <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
         </body>
     </html>
